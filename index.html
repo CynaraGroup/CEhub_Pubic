@@ -207,7 +207,7 @@
                 document.getElementById('versionNumber').textContent = data.verson || '未知版本';
                 
                 // 设置下载链接
-                document.getElementById('downloadLink').href = './CEHub.zip'; // 替换为实际下载链接
+                document.getElementById('downloadLink').href = 'https://ykj-eos-wx2-01.eos-wuxi-3.cmecloud.cn/5149f937ebb0470fac7ceae6485956f6086?response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27CEHub.zip&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20251130T143344Z&X-Amz-SignedHeaders=host&X-Amz-Expires=900&X-Amz-Credential=Y60FITYLOX7N6UJWBOEE%2F20251130%2Fdefault%2Fs3%2Faws4_request&t=2&u=1184883264333904393&ot=personal&oi=1184883264333904393&f=Fk3mUBvh_2MI3VFVFkOBHP4bFidXt_83C&ext=eyJ1dCI6MX0%3D&X-Amz-Signature=36576c0c8cc3f5a322dc172ca99123aea2596f646d5657f50722dacb36d41dbb'; // 替换为实际下载链接
             } catch (error) {
                 console.error('获取更新信息失败:', error);
                 document.getElementById('updateNotice').textContent = '获取更新信息失败，请稍后再试';
